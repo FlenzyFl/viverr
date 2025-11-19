@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Простая Telegram Mini App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+<div class="app">
+    <h1 class="title">Мини‑аппка 👋</h1>
+    <p class="subtitle">
+        Это простой пример Telegram Mini App. Данные ниже приходят из Telegram.
+    </p>
+
+    <div class="card">
+        <p><strong>Имя пользователя:</strong> <span id="username">—</span></p>
+        <p><strong>ID пользователя:</strong> <span id="userid">—</span></p>
+    </div>
+
+    <div class="card">
+        <label for="note">Сообщение для бота:</label>
+        <textarea id="note" rows="3" placeholder="Напиши что‑нибудь, это улетит боту..."></textarea>
+    </div>
+
+    <button id="sendBtn" class="btn-primary">Отправить данные боту</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
