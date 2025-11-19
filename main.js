@@ -31,6 +31,9 @@ function init() {
             time: new Date().toISOString(),
         };
 
+        alert("SEND: " + JSON.stringify(payload));
+        console.log("Sending payload:", payload);
+        
         // Отправляем данные в бота
         tg.sendData(JSON.stringify(payload));
 
